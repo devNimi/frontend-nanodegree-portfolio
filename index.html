@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nimesh's Portfolio Page</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!--  Experiemental Feature - from this article - https://hpbn.co/primer-on-web-performance/ -->
+  <link rel="prerender" href="http://nimeshjain.com/projects">
+</head>
+
+<body>
+  <div class="container">
+    <header class="row">
+      <div class="col-xs-12 col-sm-6">
+        <picture>
+          <source srcset="images/author-image-200-2x.webp 200w, images/author-image-100-1x.webp 100w" type="image/webp">
+          <source srcset="images/author-image-200-2x.jpg 200w, images/author-image-100-1x.jpg 100w" type="image/jpeg">
+          <img class="title-image img-responsive img-circle" src="images/author-image-200-2x.jpg" alt="author's image" data-toggle="modal" data-target="#featured-work-1">
+        </picture>
+      </div>
+      <div class="col-xs-12 col-sm-6 text-uppercase author-intro">
+        <h1 class="title-super text-thin">Nimesh Jain</h1>
+        <h4 class="title-sub">Front-end Ninja</h4>
+      </div>
+    </header>
+
+    <hr class="style-one">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Carousel -->
+        <div id="carousel-featured-images" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-featured-images" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-featured-images" data-slide-to="1"></li>
+            <li data-target="#carousel-featured-images" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <a href="http://nimeshjain.com/projects/ms-dhoni-tribute-page">
+                <picture>
+                  <source srcset="images/header-image-1-2560-retina.webp 2560w, images/header-image-1-1600-large-2x.webp 1600w, images/header-image-1-1280-medium-2x.webp 1280w, images/header-image-1-800-large-1x.webp 800w, images/header-image-1-640-medium-1x.webp 640w, images/header-image-1-320-small-1x.webp 320w" type="image/webp">
+                  <source srcset="images/header-image-1-2560-retina.jpg 2560w, images/header-image-1-1600-large-2x.webp 1600w, images/header-image-1-1280-medium-2x.jpg 1280w, images/header-image-1-800-large-1x.jpg 800w, images/header-image-1-640-medium-1x.jpg 640w, images/header-image-1-320-small-1x.jpg 320w" type="image/jpeg">
+                  <img class="img-responsive img-thumbnail" src="images/header-image-1-2560-retina.jpg" alt="Featured Images">
+                </picture>
+              </a>
+              <div class="carousel-caption">
+                <a href="http://nimeshjain.com/projects/ms-dhoni-tribute-page"><h4 class="carousel-caption carousel-caption-one">PROJECT: M.S. Tribute Page</h4></a>
+              </div>
+            </div>
+            <div class="item">
+              <a href="http://nimeshjain.com/projects/interactive-resume">
+                <picture>
+                  <source srcset="images/header-image-2-2560-retina.webp 2560w, images/header-image-2-1600-large-2x.webp 1600w, images/header-image-2-1280-medium-2x.webp 1280w, images/header-image-2-800-large-1x.webp 800w, images/header-image-2-640-medium-1x.webp 640w, images/header-image-2-320-small-1x.webp 320w" type="image/webp">
+                  <source srcset="images/header-image-2-2560-retina.jpg 2560w, images/header-image-2-1600-large-2x.webp 1600w, images/header-image-2-1280-medium-2x.jpg 1280w, images/header-image-2-800-large-1x.jpg 800w, images/header-image--640-medium-1x.jpg 640w, images/header-image-2-320-small-1x.jpg 320w" type="image/jpeg">
+                  <img class="img-responsive img-thumbnail" src="images/header-image-2-2560-retina.jpg" alt="Featured Images">
+                </picture>
+              </a>
+              <div class="carousel-caption">
+                <a href="http://nimeshjain.com/projects/interactive-resume"><h4 class="carousel-caption carousel-caption-two">PROJECT: Interactive Resume</h4></a>
+              </div>
+            </div>
+            <div class="item">
+              <a href="http://nimeshjain.com/projects/random-quote-generator">
+                <picture>
+                  <source srcset="images/header-image-3-2560-retina.webp 2560w, images/header-image-3-1600-large-2x.webp 1600w, images/header-image-3-1280-medium-2x.webp 1280w, images/header-image-3-800-large-1x.webp 800w, images/header-image-3-640-medium-1x.webp 640w, images/header-image-3-320-small-1x.webp 320w" type="image/webp">
+                  <source srcset="images/header-image-3-2560-retina.jpg 2560w, images/header-image-3-1600-large-2x.webp 1600w, images/header-image-3-1280-medium-2x.jpg 1280w, images/header-image-3-800-large-1x.jpg 800w, images/header-image-3-640-medium-1x.jpg 640w, images/header-image-3-320-small-1x.jpg 320w" type="image/jpeg">
+                  <img class="img-responsive img-thumbnail" src="images/header-image-3-2560-retina.jpg" alt="Featured Images">
+                </picture>
+              </a>
+              <div class="carousel-caption">
+                <a href="http://nimeshjain.com/projects/random-quote-generator"><h4 class="carousel-caption carousel-caption-three">PROJECT: Random Quote Generator</h4></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-featured-images" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-featured-images" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /.Carousel -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-muted text-left">Featured Work</h2>
+      </div>
+    </div>
+
+    <section class="row">
+      <article class="col-sm-6 col-md-4">
+        <a href="#" data-toggle="modal" data-target="#featured-work-1">
+          <picture>
+            <source srcset="images/featured-work-1-1600-large-2x.webp 1600w, images/featured-work-1-1280-medium-2x.webp 1280w, images/featured-work-1-800-large-1x.webp 800w, images/featured-work-1-640-medium-1x.webp 640w, images/featured-work-1-320-small.webp 320w" type="image/webp">
+            <source srcset="images/featured-work-1-1600-large-2x.jpg 1600w, images/featured-work-1-1280-medium-2x.jpg 1280w, images/featured-work-1-800-large-1x.jpg 800w, images/featured-work-1-640-medium-1x.jpg 640w, images/featured-work-1-320-small.jpg 320w" type="image/jpeg">
+            <img class="img-responsive img-thumbnail" src="images/featured-work-1-1600-large-2x.jpg" alt="featured work image">
+          </picture>
+        </a>
+        <h3>Appify</h3>
+        <p><a href="http://nimeshjain.com/projects">Link to project</a>
+        </p>
+      </article>
+
+      <article class="col-sm-6 col-md-4">
+        <a href="#" data-toggle="modal" data-target="#featured-work-2">
+          <picture>
+            <source srcset="images/featured-work-2-1600-large-2x.webp 1600w, images/featured-work-2-1280-medium-2x.webp 1280w, images/featured-work-2-800-large-1x.webp 800w, images/featured-work-2-640-medium-1x.webp 640w, images/featured-work-2-320-small.webp 320w" type="image/webp">
+            <source srcset="images/featured-work-2-1600-large-2x.jpg 1600w, images/featured-work-2-1280-medium-2x.jpg 1280w, images/featured-work-2-800-large-1x.jpg 800w, images/featured-work-2-640-medium-1x.jpg 640w, images/featured-work-2-320-small.jpg 320w" type="image/jpeg">
+            <img class="img-responsive img-thumbnail" src="images/featured-work-2-1600-large-2x.jpg" alt="featured work image">
+          </picture>
+        </a>
+        <h3>Sunflower</h3>
+        <p><a href="http://nimeshjain.com/projects">Link to project</a></p>
+      </article>
+
+      <article class="col-sm-offset-3 col-md-offset-0 col-sm-6 col-md-4 ">
+        <a href="#" data-toggle="modal" data-target="#featured-work-3">
+          <picture>
+            <source srcset="images/featured-work-3-1600-large-2x.webp 1600w, images/featured-work-3-1280-medium-2x.webp 1280w, images/featured-work-3-800-large-1x.webp 800w, images/featured-work-3-640-medium-1x.webp 640w, images/featured-work-3-320-small.webp 320w" type="image/webp">
+            <source srcset="images/featured-work-3-1600-large-2x.jpg 1600w, images/featured-work-3-1280-medium-2x.jpg 1280w, images/featured-work-3-800-large-1x.jpg 800w, images/featured-work-3-640-medium-1x.jpg 640w, images/featured-work-3-320-small.jpg 320w" type="image/jpeg">
+            <img class="img-responsive img-thumbnail" src="images/featured-work-3-1600-large-2x.jpg" alt="featured work image">
+          </picture>
+        </a>
+        <h3>Bokeh</h3>
+        <p><a href="http://nimeshjain.com/projects">Link to project</a>
+        </p>
+      </article>
+    </section>
+
+    <hr class="style-two">
+
+    <footer class="row">
+      <ul class="footer-list">
+        <li class="col-xs-3 col-sm-3"><a href="https://www.facebook.com/devNimi" target="_blank"><span class="brandico-facebook footer-icon-facebook"></span> <span class="footer-icon-text">Facebook</span></a>
+        </li>
+        <li class="col-xs-3 col-sm-3"><a href="https://github.com/devNimi" target="_blank"><span class="brandico-github footer-icon-github"></span> <span class="footer-icon-text">Github</span></a>
+        </li>
+        <li class="col-xs-3 col-sm-3"><a href="https://twitter.com/devNimi" target="_blank"><span class="brandico-twitter footer-icon-twitter"></span> <span class="footer-icon-text">Twitter</span></a>
+        </li>
+        <li class="col-xs-3 col-sm-3"><a href="https://linkedin.com/in/devnimi" target="_blank"><span class="brandico-linkedin footer-icon-linkedin"></span> <span class="footer-icon-text">Linkedin</span></a>
+        </li>
+      </ul>
+    </footer>
+
+  </div><!-- ./Container -->
+
+  <!-- Modal -->
+  <!--Featured project 1 Modal -->
+  <div class="modal fade" id="featured-work-1" tabindex="-1" role="dialog" aria-label="ModalLabel" aria-hidden=" true ">
+      <div class="modal-dialog ">
+        <div class="modal-content ">
+          <div class="modal-header ">
+            <h3 class="modal-title " id="featured-work-modal-title-1 ">Appify</h3>
+          </div>
+          <div class="modal-body ">
+            <picture>
+              <source srcset="images/featured-work-1-1600-large-2x.webp 1600w, images/featured-work-1-1280-medium-2x.webp 1280w, images/featured-work-1-800-large-1x.webp 800w, images/featured-work-1-640-medium-1x.webp 640w, images/featured-work-1-320-small.webp 320w " type="image/webp ">
+              <source srcset="images/featured-work-1-1600-large-2x.jpg 1600w, images/featured-work-1-1280-medium-2x.jpg 1280w, images/featured-work-1-800-large-1x.jpg 800w, images/featured-work-1-640-medium-1x.jpg 640w, images/featured-work-1-320-small.jpg 320w " type="image/jpeg ">
+              <img class="img-responsive img-thumbnail " src="images/featured-work-1-1600-large-2x.jpg " alt="featured work image " data-toggle="modal " data-target="#featured-work-1 ">
+            </picture>
+            <p class="lead ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+          <div class="modal-footer ">
+            <a href="http://nimeshjain.com/projects " role="button " class="btn btn-primary " target="_blank ">View</a>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Featured project 2 Modal -->
+    <div class="modal fade " id="featured-work-2" tabindex="-1 " role="dialog " aria-label="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="featured-work-modal-title-2">Sunflower</h3>
+          </div>
+          <div class="modal-body">
+            <picture>
+              <source srcset="images/featured-work-2-1600-large-2x.webp 1600w, images/featured-work-2-1280-medium-2x.webp 1280w, images/featured-work-2-800-large-1x.webp 800w, images/featured-work-2-640-medium-1x.webp 640w, images/featured-work-2-320-small.webp 320w" type="image/webp">
+              <source srcset="images/featured-work-2-1600-large-2x.jpg 1600w, images/featured-work-2-1280-medium-2x.jpg 1280w, images/featured-work-2-800-large-1x.jpg 800w, images/featured-work-2-640-medium-1x.jpg 640w, images/featured-work-2-320-small.jpg 320w" type="image/jpeg">
+              <img class="img-responsive img-thumbnail" src="images/featured-work-2-1600-large-2x.jpg" alt="featured work image" data-toggle="modal" data-target="#featured-work-2">
+            </picture>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+          <div class="modal-footer">
+            <a href="http://nimeshjain.com/projects" role="button" class="btn btn-primary" target="_blank">View</a>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--Featured project 3 Modal -->
+  <div class="modal fade" id="featured-work-3" tabindex="-1" role="dialog" aria-label="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="featured-work-modal-title-3">Bokeh</h3>
+        </div>
+        <div class="modal-body">
+          <picture>
+            <source srcset="images/featured-work-3-1600-large-2x.webp 1600w, images/featured-work-3-1280-medium-2x.webp 1280w, images/featured-work-3-800-large-1x.webp 800w, images/featured-work-3-640-medium-1x.webp 640w, images/featured-work-3-320-small.webp 320w" type="image/webp">
+            <source srcset="images/featured-work-3-1600-large-2x.jpg 1600w, images/featured-work-3-1280-medium-2x.jpg 1280w, images/featured-work-3-800-large-1x.jpg 800w, images/featured-work-3-640-medium-1x.jpg 640w, images/featured-work-3-320-small.jpg 320w" type="image/jpeg">
+            <img class="img-responsive img-thumbnail" src="images/featured-work-3-1600-large-2x.jpg" alt="featured work image" data-toggle="modal" data-target="#featured-work-3">
+          </picture>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+        <div class="modal-footer">
+          <a href="http://nimeshjain.com/projects" role="button" class="btn btn-primary" target="_blank">View</a>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking. This allows browsers to ensure that resources hosted on third-party servers have not been tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded from a third-party source. Read more at srihash.org -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

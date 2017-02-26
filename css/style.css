@@ -1,0 +1,168 @@
+/*Font icons*/
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+/* body selector will target the whole body*/
+body {
+  font-family: 'Lato', sans-serif;
+  /*color: #2d3c49;*/
+  color: #747704;
+  font-weight: 300;
+  text-align: center;
+}
+
+.text-muted {
+  color: #BCBBBB;
+  /*color: #7d97ad; */;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+/*hr styles*/
+.style-one {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.style-two {
+  margin-bottom: 10px;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.author-intro {
+  margin-top: 10px;
+}
+
+.title-image {
+  height: 100px;
+  width: 100px;
+  margin: 10px auto;
+}
+
+.title-super {
+  margin-top: 0;
+}
+
+.title-sub {
+  margin: 0;
+}
+
+/* overiding few carousel-caption deafault properties*/
+.carousel-caption-one {
+  color: #151311;
+  text-shadow: 1px 2px 1px rgba(255, 255, 255, 0.6);
+}
+
+.carousel-caption-two {
+  color: #151311;
+  text-shadow: 1px 2px 1px rgba(239, 207, 90, 0.6);
+}
+
+.carousel-caption-three {
+  color: #ffffff;
+  text-shadow: 1px 2px 1px #ec971f;
+}
+
+.style-two {
+  margin-bottom: 10px;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  display: inline;
+  padding: 0 1em 0.5em;
+}
+
+.footer-list a:hover {
+  text-decoration: none;
+}
+
+.footer-icon-text {
+  display: none;
+}
+
+.footer-icon-facebook {
+  color: #3b5998;
+}
+
+.footer-icon-github {
+  color: #333;
+}
+
+.footer-icon-twitter {
+  color: #00aced;
+}
+
+.footer-icon-linkedin {
+  color: #007bb6;
+}
+
+.modal-body {
+  padding-bottom: 0;
+}
+
+.modal-body .lead {
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+/*Media Quries*/
+
+@media screen and (min-width: 440px) {
+  .footer-icon-text {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .footer-list li {
+    font-size: 16px;
+  }
+}
+
+/* 768px is Bootstrap' sm limit */
+@media screen and (min-width: 768px) {
+  .title-image {
+    margin: 10px 0 0 0;
+  }
+  .author-intro {
+    margin-top: 20px;
+  }
+  .title-super {
+    font-size: 48px;
+    text-align: right;
+  }
+  .title-sub {
+    text-align: right;
+  }
+  .footer-list li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .author-intro {
+    margin-top: 10px;
+  }
+  .title-super {
+    font-size: 60px;
+  }
+}
